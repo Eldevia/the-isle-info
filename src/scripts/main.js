@@ -69,7 +69,7 @@ const APP = {
 			// Note: some RSS feeds can't be loaded in the browser due to CORS security.
 			// To get around this, you can use a proxy.
 			const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-			const URL = `${CORS_PROXY}https://steamcommunity.com/games/TheIsle/rss/`
+			const URL = `${CORS_PROXY}https://store.steampowered.com/feeds/news/app/376210`
 
 			const parser = new RSSParser();
 			parser.parseURL(URL, function(err, feed) {
