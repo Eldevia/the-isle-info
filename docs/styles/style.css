@@ -420,16 +420,16 @@ span.error { color: #E94C3D; }
 .map__marker-icon:hover svg { transform: scale(0.8); transform-origin: bottom center; fill: #e63726; }
 .tippy-active .map__marker-icon { transform: scale(0); }
 .map--hide-markers .map__marker-icon { visibility: hidden; opacity: 0; }
-.map--invisible-markers .map__marker-icon { opacity: 0.2; }
+.map--invisible-markers .map__marker-icon {opacity: 0.05;}
 .map__cursor-position { position: absolute; z-index: 1060; margin-top: 10px; padding: 0 5px; border-radius: 15px; background-color: rgba(255, 255, 255, 0.8); color: #212121; white-space: nowrap; font-size: 12px; text-align: center; min-width: 115px; margin-left: -58px; }
 @media (min-width: 1200px) { .map__cursor-position { transform: none; margin-left: 10px; } }
 .map__cursor-position:after { content: ''; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; width: 0; height: 0; border-style: solid; border-width: 0 5px 6px 5px; border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent; }
 @media (min-width: 1200px) { .map__cursor-position:after { display: none; } }
 
-.user-coords {padding: 20px;border-radius: 15px;backdrop-filter: blur(73px);background-color: #aeafa921;}
+.user-coords {padding: 20px;border-radius: 15px;/* backdrop-filter: blur(73px); */background-color: #464b52c9;}
 @media (min-width: 768px) { .user-coords { height: 80px; } }
 .user-coords__inner.headroom { padding: 0.1px 0; }
-@media (min-width: 768px) { .user-coords__inner.headroom--not-top {position: fixed;z-index: 1030;top: 0;left: 12px;right: 12px;max-width: 1176px;margin: 0 auto;width: calc(100% - 24px);padding: 10px 20px;/* background-color: #2f3742; */} }
+@media (min-width: 768px) { .user-coords__inner.headroom--not-top {position: fixed;z-index: 1030;top: 0;left: 12px;right: 12px;max-width: 1176px;margin: 0 auto;width: calc(100% - 24px);padding: 10px 20px;backdrop-filter: blur(6px);background-color: #454b53b8;} }
 .user-coords__input { text-align: center; width: 100%; }
 @media (min-width: 768px) { .user-coords__input { width: 100px; } }
 @media (min-width: 992px) { .user-coords__input { width: 120px; } }
