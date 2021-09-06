@@ -32,3 +32,10 @@
 					</div>
 				</div>
 			</div>
+	  <script>
+	  setTimeout(function(){ Array.prototype.forEach.call(document.querySelectorAll(".menu-trigger"), function(t) {
+            t.addEventListener("click", function() {
+                document.body.classList.toggle("nav-showed")
+            })
+        })
+		}, 2000)</script>
