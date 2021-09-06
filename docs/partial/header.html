@@ -32,4 +32,9 @@
 					</div>
 				</div>
 			</div>
-	
+	  <script>
+	  Array.prototype.forEach.call(document.querySelectorAll(".menu-trigger"), function(t) {
+            t.addEventListener("click", function() {
+                document.body.classList.toggle("nav-showed")
+            })
+        })</script>

@@ -114,7 +114,7 @@ img[data-src], img[data-srcset] {display: block;min-height: 1px;border-radius: 5
 
 .lazyload-error { background: url("../img/theme/no-img.png") center no-repeat; background-size: cover; }
 
-.btn {/* align-content: space-around; *//* display: inline-flex; */align-items: center;justify-content: center;height: 40px;min-width: 195px;padding: 0 20px;border: 1px solid rgba(255, 255, 255, 0);border-radius: 15px;text-align: center;background: #F1F1F1;-webkit-user-select: none;-ms-user-select: none;user-select: none;letter-spacing: -0.04em;color: #212121;cursor: pointer;text-decoration: none;font-size: 18px;box-shadow: none;transition: background 0.1s, color 0.1s, border 0.1s, box-shadow .15s ease-in-out;}
+.btn {/* align-content: space-around; */display: inline-flex; align-items: center;justify-content: center;height: 40px;min-width: 195px;padding: 0 20px;border: 1px solid rgba(255, 255, 255, 0);border-radius: 15px;text-align: center;background: #F1F1F1;-webkit-user-select: none;-ms-user-select: none;user-select: none;letter-spacing: -0.04em;color: #212121;cursor: pointer;text-decoration: none;font-size: 18px;box-shadow: none;transition: background 0.1s, color 0.1s, border 0.1s, box-shadow .15s ease-in-out;}
 .btn:hover { text-decoration: none; color: #000; }
 .btn:focus { outline: 0; box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25); }
 .btn svg { display: inline-block; vertical-align: middle; transition: all 0.1s; fill: #212121; }
