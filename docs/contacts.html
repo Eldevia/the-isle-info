@@ -28,46 +28,21 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="styles/vendors.css">
 	<link rel="stylesheet" href="styles/style.css?3213122">
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
+	<script> 
+$(function(){
+  $("#header").load("partial/header.html"); 
+});
+</script> 
 </head>
 
 <body>
 	<div class="tingle-content-wrapper wrap-site">
 		<div class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience and security.</div>
 		<div class="lazyload wrap-site__bg" data-bg="url(img/media/bg-1.jpg)"></div>
-		<header class="header">
-			<div class="wrap">
-				<div class="row align-items-center">
-					<div class="col-auto">
-						<a class="header__logo" href="index.html">
-							<svg class="svg-icon">
-								<use xlink:href="img/theme/sprite.symbol.svg#si-fossil" />
-							</svg>
-						</a>
-					</div>
-					<div class="col-auto">
-						<div class="header__title">The Isle Helper</div>
-					</div>
-					<div class="col-auto ml-auto">
-						<button class="d-lg-none menu-trigger menu-trigger--pos-header" type="button"><i class="menu-trigger__icon"></i>
-						</button>
-						<nav class="top-nav">
-							<div class="top-nav__scroll">
-								<ul class="top-nav__list">
-									<li class="top-nav__item"><a class="top-nav__link" href="map-v-three.html">Map v3</a>
-									</li>
-									<li class="top-nav__item"><a class="top-nav__link" href="map-thenyaw.html">Map Thenyaw</a>
-									</li>
-									<li class="top-nav__item"><a class="top-nav__link" href="map-isla-spiro.html">Map Evrima</a>
-									</li><li class="top-nav__item"><a class="top-nav__link" href="stats.html">Stats</a>
-									</li>
-									
-								<li class="top-nav__item"><a class="top-nav__link" href="contacts.html">Contacts</a>
-									</li></ul>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</div>
+		<header id="header" class="header">
 		</header>
 		<main class="main">
 			<section class="section">
