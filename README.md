@@ -1,6 +1,7 @@
-# The isle info website
+# The Isle Helper
 
-The site was created to help players of the computer game [The isle](https://store.steampowered.com/app/376210/The_Isle/). Here you can find a convenient map with the ability to determine your location in the game. Also, information on the characteristics of game dinosaurs is indicated.
+This site is the permitted continuation of Antroll's https://github.com/antroll/the-isle-info.
+Aiming to have more functions and features.
 
 #### install
 
