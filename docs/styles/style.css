@@ -293,7 +293,7 @@ span.error { color: #E94C3D; }
 
 .wrap { max-width: 1200px; }
 
-.nav-showed { overflow: hidden; }
+.nav-showed { overflow: hidden;  }
 
 @media (max-width: 902px) {.header {z-index: 9;background: #40454d78;/* padding: 5px 0 10px; *//* background: #232830; *//* padding: 5px 0 10px; */}}
 @media (min-width: 902px) {.header {backdrop-filter: blur(20px); z-index: 9; background: #1919190d;/* padding: 5px 0 10px; *//* background: #232830; *//* padding: 5px 0 10px; */}}
