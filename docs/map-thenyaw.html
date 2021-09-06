@@ -27,7 +27,11 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="styles/vendors.css">
 	<link rel="stylesheet" href="styles/style.css?3213122">
+	<script
+    src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
 <script> 
+
 $(function(){
    $("#header").load("partial/header.html"); 
 });
@@ -89,7 +93,7 @@ $(function(){
 									</li>
 									<li class="map-settings__item">
 										<label class="mr-2 ui-switch">
-											<input class="visuallyhidden ui-switch__input" type="checkbox" name="invisible-markers"><i class="ui-switch__icon"></i><span class="ui-switch__text">Invisible markers</span>
+											<input class="visuallyhidden ui-switch__input" type="checkbox" name="invisible-markers"><i class="ui-switch__icon"></i><span class="ui-switch__text">Show markers</span>
 										</label>
 									</li>
 								</ul>
@@ -327,6 +331,7 @@ $(function(){
 			</div>
 		</footer>
 	</div>
+	<script> document.querySelector(".map").classList.add("map--invisible-markers")</script> 
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CObject.assign%2CArray.from%2CURLSearchParams"></script>
 	<script src="scripts/vendors.js?3213122"></script>
