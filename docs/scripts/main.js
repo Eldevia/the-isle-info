@@ -18,5 +18,4 @@ function updateUserStyle(color){
     }
     // store active style
     localStorage.setItem('theme_style', style);
-?
 }//# sourceMappingURL=main.js.map
