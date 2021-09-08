@@ -2,9 +2,13 @@
 			<div class="wrap">
 				<div class="row align-items-center">
 					<div class="col-auto">
+						<a class="colorpick" onclick="updateUserStyle('brown')">
+						<button id="brownswitch"></button>	</a>
+					<a class="colorpick" onclick="updateUserStyle('blue')">
+						<button id="blueswitch"></button>	</a></div><div class="col-auto">
 						<a class="header__logo" href="index.html">
 							<svg class="svg-icon">
-								<use xlink:href="img/theme/sprite.symbol.svg#si-fossil" />
+								<use xlink:href="img/theme/sprite.symbol.svg#si-fossil"></use>
 							</svg>
 						</a>
 					</div>
@@ -33,6 +37,29 @@
 				</div>
 			</div>
 	  <script>
+	  var theme_style = localStorage && localStorage.getItem('theme_style');
+if(theme_style){
+   document.write(theme_style);
+}
+
+function updateUserStyle(color){
+    // create style tag
+   if(color === "brown") { var style = '<link rel="stylesheet" id="style" href="styles/brown.css">'; }
+   if(color === "blue") { var style = '<link rel="stylesheet" id="style" href="styles/style.css">'; }
+    // see if user style tag already exists and replace
+    var $currUserStyle =$('#user_style'); 
+    if($currUserStyle.length){
+       $currUserStyle.replaceWith(style); 
+    }else{
+        // if didn't exist add to head
+        $('head').append(style);
+    }
+    // store active style
+    localStorage.setItem('theme_style', style);
+​
+}
+
+	  
 	  setTimeout(function(){ Array.prototype.forEach.call(document.querySelectorAll(".menu-trigger"), function(t) {
             t.addEventListener("click", function() {
                 document.body.classList.toggle("nav-showed")
