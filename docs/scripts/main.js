@@ -3,7 +3,7 @@
 if(theme_style){
    document.write(theme_style);
 }
-
+$('head').append(style);
 function updateUserStyle(color){
     // create style tag
    if(color === "brown") { var style = '<link rel="stylesheet" id="style" href="styles/brown.css">'; }
