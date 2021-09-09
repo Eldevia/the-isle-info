@@ -11,15 +11,16 @@ function updateUserStyle(color){
     // see if user style tag already exists and replace
     var $currUserStyle =$('#user_style'); 
     if($currUserStyle.length){
-		$('body').fadeOut();
+		$('body').fadeOut( function() {
        $currUserStyle.replaceWith(style); 
 	   $('body').fadeIn();
-    }else{
+    }) 
+	}else{
         // if didn't exist add to head
-		$('body').fadeOut();
+		$('body').fadeOut( function() {
         $('head').append(style);
 		$('body').fadeIn();
-    }
+    })}
     // store active style
     localStorage.setItem('theme_style', style);
 }//# sourceMappingURL=main.js.map
