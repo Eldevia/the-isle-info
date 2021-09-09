@@ -301,7 +301,7 @@ span.error { color: #E94C3D; }
 .modal-gallery .swiper-button-prev:hover, .modal-gallery .swiper-button-next:hover { opacity: 1; }
 .modal-gallery .swiper-container-initialized .swiper-button-prev, .modal-gallery .swiper-container-initialized .swiper-button-next { display: block; }
 .modal-gallery .swiper-container-initialized .swiper-button-disabled { display: none; }
-.wrap-site {min-height: 100%;min-width: 320px;position: relative;z-index: 0;width: 100%;overflow: hidden;display: flex;flex-flow: column;background-color: #b7babf;color: #fff;}
+.wrap-site {min-height: 100%;min-width: 320px;position: relative;z-index: 0;width: 100%;overflow: hidden;display: flex;flex-flow: column;background-color: #4e4238;color: #fff;}
 .wrap-site__bg { z-index: -1; position: fixed; left: 0; top: 0; height: 100%; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; }
 .wrap-site__bg:after {content: '';display: block;width: 100%;height: 100%;background-color: #353429ed;}
 
@@ -385,8 +385,8 @@ span.error { color: #E94C3D; }
 .news-feed__show-more { display: none; }
 .news-feed--loaded .news-feed__show-more { display: block; }
 .news-feed--loaded .news-feed__loader { display: none; }
-.news-feed__loader-img-wrap { width: 280px; position: relative; padding: 2px; border-radius: 50%; box-shadow: 0 0 10px #38414e; }
-.news-feed__loader-img-wrap:after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, #38414e 65%); border-radius: 50%; }
+.news-feed__loader-img-wrap {width: 280px;position: relative;padding: 2px;border-radius: 50%;box-shadow: 0 0 10px #4e4238;}
+.news-feed__loader-img-wrap:after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, #776343 65%); border-radius: 50%; }
 .news-feed__loader-img { border-radius: 50%; overflow: hidden; }
 .news-feed__loader-img img { display: block; width: 100%; }
 

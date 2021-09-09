@@ -11,10 +11,14 @@ function updateUserStyle(color){
     // see if user style tag already exists and replace
     var $currUserStyle =$('#user_style'); 
     if($currUserStyle.length){
+		$('body').fadeOut();
        $currUserStyle.replaceWith(style); 
+	   $('body').fadeIn();
     }else{
         // if didn't exist add to head
+		$('body').fadeOut();
         $('head').append(style);
+		$('body').fadeIn();
     }
     // store active style
     localStorage.setItem('theme_style', style);
