@@ -13,7 +13,7 @@
 		gtag('config', 'UA-136534835-1');
 	</script>
 	<meta charset="utf-8">
-	<title>The Isle - info: Isle V3 map</title>
+	<title>The Isle - info: Evrima map</title>
 	<meta name="description" content>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png?v=qABE66X3wp">
@@ -27,12 +27,15 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="styles/vendors.css">
-	<link rel="stylesheet" id="style" href="styles/style.css">
+	
 	<script
     src="https://code.jquery.com/jquery-3.3.1.js">
 </script>
 	<script> 
-
+ var theme_style = localStorage && localStorage.getItem('theme_style');
+if(theme_style){
+   document.write(theme_style);
+}
 $(function(){
    $("#header").load("partial/header.html"); 
 });

@@ -4,6 +4,42 @@
  * 2019 Panov A.P.
  */
 html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+#livemapbtn {
+    /* font-weight: 600; */
+    font-size: 1.12em;
+    border-radius: 10px;
+    background: #874fe3;
+    padding: 5px;
+    color: #f3e9fd;
+    transition: 0.3s;
+}
+
+#livemapbtn:hover {
+    background: #7c26e6;
+}
+
+.collapsible {
+    background-color: #7777778f;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #818181bd;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+     background-color: #3d3d3d;
+}
 
 html, body { height: 100%; }
 
