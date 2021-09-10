@@ -122,7 +122,7 @@ img[data-object-fit="none"] { -o-object-fit: none; object-fit: none; }
 .fit-img { background-size: cover; background-position: center; background-repeat: no-repeat; }
 .fit-img > img { opacity: 0; }
 
-.svg-icon { width: 1em; height: 1em; display: inline-block; vertical-align: middle; }
+.svg-icon { width: 1em; height: 0.7em; display: inline-block; vertical-align: middle; }
 
 .visuallyhidden { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
 
@@ -336,7 +336,7 @@ span.error { color: #E94C3D; }
 @media (min-width: 576px) { .header { padding: 5px 0; } }
 .header__logo { fill: #fff; font-size: 60px; }
 .header__logo:hover { fill: #007bff; }
-.header__logo svg { display: block; transition: all 0.2s; }
+.header__logo svg { display: block; transition: all 0.1s; }
 .header__title { font-size: 22px; font-weight: 600; }
 
 .top-nav { position: fixed; z-index: 1030; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(56, 65, 78, 0.95); opacity: 0; visibility: hidden; transition: all .2s; display: flex; align-items: center; justify-content: center; }
