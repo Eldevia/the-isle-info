@@ -1,0 +1,531 @@
+
+<html class="no-js">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136534835-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-136534835-1');
+	</script>
+	<meta charset="utf-8">
+	<title>The Isle - info: dinosaurs stats</title>
+	<meta name="description" content>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png?v=qABE66X3wp">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png?v=qABE66X3wp">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png?v=qABE66X3wp">
+	<link rel="manifest" href="img/favicon/site.webmanifest?v=qABE66X3wp">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg?v=qABE66X3wp" color="#000000">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico?v=qABE66X3wp">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#2f3742">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="styles/vendors.css">
+	<link rel="stylesheet" href="styles/style.css?3213122">
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
+	<script> 
+$(function(){
+  $("#header").load("partial/header.html"); 
+});
+
+</script>
+
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.2/dist/tippy.css">
+ <link rel="stylesheet" type="text/css" href="css/lib/control/iconselect.css" >
+        <script type="text/javascript" src="lib/control/iconselect.js"></script>
+        
+        <script type="text/javascript" src="lib/iscroll.js"></script>
+
+        <script>
+           var iconSelect; 
+        var iconSelect2;
+
+        window.onload = function(){
+selectedText = document.getElementById('selected-text');
+            
+           const cbox = document.querySelectorAll('.icon-select');
+			for (let i = 0; i < cbox.length; i++) {
+     cbox[i].addEventListener('changed', function(e){
+               selectedText.value = `!skin ${iconSelect2.getSelectedValue()} ${iconSelect3.getSelectedValue()} ${iconSelect.getSelectedValue()} ${iconSelect4.getSelectedValue()} ${iconSelect5.getSelectedValue()} `;
+            });
+ }
+ 
+            
+            iconSelect = new IconSelect("my-icon-select", 
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
+                'selectedBoxPadding':5,
+                'iconsWidth':23,
+                'iconsHeight':23,
+                'boxIconSpace':1,
+                'vectoralIconNumber':4,
+                'horizontalIconNumber':4});
+				
+				 iconSelect2 = new IconSelect("my-icon-select2", 
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
+                'selectedBoxPadding':5,
+                'iconsWidth':23,
+                'iconsHeight':23,
+                'boxIconSpace':1,
+                'vectoralIconNumber':4,
+                'horizontalIconNumber':2});
+
+				iconSelect3 = new IconSelect("my-icon-select3", 
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
+                'selectedBoxPadding':5,
+                'iconsWidth':23,
+                'iconsHeight':23,
+                'boxIconSpace':1,
+                'vectoralIconNumber':4,
+                'horizontalIconNumber':4});
+				
+				iconSelect4 = new IconSelect("my-icon-select4", 
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
+                'selectedBoxPadding':5,
+                'iconsWidth':23,
+                'iconsHeight':23,
+                'boxIconSpace':1,
+                'vectoralIconNumber':4,
+                'horizontalIconNumber':4});
+				
+				iconSelect5 = new IconSelect("my-icon-select5", 
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
+                'selectedBoxPadding':5,
+                'iconsWidth':23,
+                'iconsHeight':23,
+                'boxIconSpace':1,
+                'vectoralIconNumber':4,
+                'horizontalIconNumber':4});
+				
+				
+				
+            var icons = [];
+			var carnodetails = [];
+			var carnomain = [];
+			var herbimain = [];
+				var herbidetails = [];
+            var herbibody3 = [];
+		     var carnobody3 = [];
+			 
+		  //BODY, BODY2, UNDERBELLY
+		  
+		  
+            carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929720889/F600690BE7F44C5E29D1C4F206F0998FE70D1617/', 'iconValue':'1'});
+            carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929725830/3D90349C06C96F296B7A11D58374E4FBEF7328C7/', 'iconValue':'2'});
+            carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929726145/4D904436166E5C9D41A39808D6939056DF3AB1BF/', 'iconValue':'3'});
+			  carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929731446/34F302F6D744ED271C369CCEE97AE51DD1CCF56E/', 'iconValue':'6'});
+            carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929731732/B21BF4D099A71CB040DBE8A99D4ABE8CCBB412E5/', 'iconValue':'7'});
+            carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929731978/F551B8A07A6DC4AFDDD945751EBECAA868AE867E/', 'iconValue':'8'});
+		      carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929732735/EE41EE38FE59AE86EC5E826B874E19BFF99CFFF9/', 'iconValue':'11'});
+            carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929733001/EFE2982416B0ADF171D687C6F1546A53D6FF14A1/', 'iconValue':'12'});
+            carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929733736/F1AACCECEF8D3D23FCFBADE4F0EFDDB3E89299A6/', 'iconValue':'13'});
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929735067/905B11583A8426420FDA5845D50E156B6EAE5E43/', 'iconValue':'16'});
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929735561/C2136CF4BB3D40D7F300299E81C3379B190959B6/', 'iconValue':'17'});
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929735966/AE66B3359CB890D7467ADEF79B2F99D89DFCF02A/', 'iconValue':'18'});
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929736495/F2D785CE4DB72EDC4C6405CD6518D72C676F65DB/', 'iconValue':'19'});
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929656213/5DB683204400DD6075D95A05C78E5640506633AA/', 'iconValue':'20'});
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929656554/536A10612ADF47075EE8FCA0E5A60AB89DD86F9C/', 'iconValue':'21'});  
+            carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929656852/9BCA9F8C701DEDA28244AE740C3B59C8EE271621/', 'iconValue':'22'});  
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929657309/2099495936D5C9200317F741328160959129FEE2/', 'iconValue':'23'}); 
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929658270/36E412E23D1CD4EDE3172849D9F9247712EF845F/', 'iconValue':'25'});  
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929658541/BD538F46C171CA6B5AA7E974A08E3DE216E60359/', 'iconValue':'26'});  
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929658904/53B1A1DB51FE03514B89B0C846E01FB75AA5C277/', 'iconValue':'27'});  
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929659763/F778EABEBD010C74F2AA6D5203CDCAC68AC0A49F/', 'iconValue':'29'});
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660096/4EFDB72261C47461D5BF6CAC365038C243712F77/', 'iconValue':'30'});
+            carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660560/BF247305A542BE3FF180E9A668D22D51F51A7723/', 'iconValue':'31'}); 			
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660934/B36AFB8603680986E883D5CB24D8FFC3D19DC600/', 'iconValue':'32'});  
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929661518/3C5E88128B4D3DAC7BE35DAB166EDD3FD0DB5C1A/', 'iconValue':'33'});  
+			carnomain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929661966/6F2D9E335C5197DD4246B36D9D0C276EEADC7620/', 'iconValue':'34'}); 
+			
+			
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929726145/4D904436166E5C9D41A39808D6939056DF3AB1BF/', 'iconValue':'3'});
+			  herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929731446/34F302F6D744ED271C369CCEE97AE51DD1CCF56E/', 'iconValue':'6'});
+            herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929731732/B21BF4D099A71CB040DBE8A99D4ABE8CCBB412E5/', 'iconValue':'7'});
+            herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929731978/F551B8A07A6DC4AFDDD945751EBECAA868AE867E/', 'iconValue':'8'});
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929733001/EFE2982416B0ADF171D687C6F1546A53D6FF14A1/', 'iconValue':'12'});
+            herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929733736/F1AACCECEF8D3D23FCFBADE4F0EFDDB3E89299A6/', 'iconValue':'13'});
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929735067/905B11583A8426420FDA5845D50E156B6EAE5E43/', 'iconValue':'16'});
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929735561/C2136CF4BB3D40D7F300299E81C3379B190959B6/', 'iconValue':'17'});
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929735966/AE66B3359CB890D7467ADEF79B2F99D89DFCF02A/', 'iconValue':'18'});
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929736495/F2D785CE4DB72EDC4C6405CD6518D72C676F65DB/', 'iconValue':'19'});
+				herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929656213/5DB683204400DD6075D95A05C78E5640506633AA/', 'iconValue':'20'});
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929656554/536A10612ADF47075EE8FCA0E5A60AB89DD86F9C/', 'iconValue':'21'});  
+            herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929656852/9BCA9F8C701DEDA28244AE740C3B59C8EE271621/', 'iconValue':'22'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929657309/2099495936D5C9200317F741328160959129FEE2/', 'iconValue':'23'});
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929658270/36E412E23D1CD4EDE3172849D9F9247712EF845F/', 'iconValue':'25'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929659763/F778EABEBD010C74F2AA6D5203CDCAC68AC0A49F/', 'iconValue':'29'});
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929659450/63D7E8E47DD9672B4A8FE1CC3434037B76ACF20E/', 'iconValue':'28'});  
+				herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660096/4EFDB72261C47461D5BF6CAC365038C243712F77/', 'iconValue':'30'});
+            herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660560/BF247305A542BE3FF180E9A668D22D51F51A7723/', 'iconValue':'31'}); 			
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660934/B36AFB8603680986E883D5CB24D8FFC3D19DC600/', 'iconValue':'32'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929661518/3C5E88128B4D3DAC7BE35DAB166EDD3FD0DB5C1A/', 'iconValue':'33'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929661966/6F2D9E335C5197DD4246B36D9D0C276EEADC7620/', 'iconValue':'34'}); 
+				herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929662361/8FBEE30A36075A56622B6BFA908EA35604DB82BE/', 'iconValue':'35'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929663051/24FAE220B1A22CA7BB9A9EBE3FAAFB1F67C3DA5D/', 'iconValue':'36'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929663475/35687EE86C528DB4074A2EB68F442C111B547DCC/', 'iconValue':'37'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929663946/6A5785BF0B182394B5040D2335475AB93C71447D/', 'iconValue':'38'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929664366/CDF1594A82C6C4A37E7AF012B76EA9B01845D7F5/', 'iconValue':'39'}); 
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929573694/04B78E5B090FC076A7080154DE326EF98212A916/', 'iconValue':'41'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929573895/E9460CC7B151112656787C8749E35654E176AF56/', 'iconValue':'42'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929574101/068FF18BB6C561B8DD0336DB0775944530C63499/', 'iconValue':'43'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929574397/156AC2A011415C43B60663EF1639620A7FE4D4AC/', 'iconValue':'44'});
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929574594/E18F46165D7E46603381391AE16D2A4544A34E5C/', 'iconValue':'45'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929574796/FA3B459686047B78DDDDECCA99CE461B31D53A6C/', 'iconValue':'46'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929575024/54DFE6B85009697DDAD01F67C7536481ACB2E537/', 'iconValue':'47'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929575256/EF8C3EF446B7DFC16597D72FF5AC61544388B44A/', 'iconValue':'48'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929578820/3C1B691A70535AB6D961942196C5294A4D3BDA1F/', 'iconValue':'49'}); 
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929579778/9B5C0BA6ABEC7DDEE41EEBE75974C240B7A0243C/', 'iconValue':'52'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929580122/9C29E1E9FC52CE1782DF5DAFBDDDF27A72C5330B/', 'iconValue':'53'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929580504/4B9BE7D9DB3E7AA6726059BD812FC2631D6A56BA/', 'iconValue':'54'}); 
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929580855/47EC7BDB5111E0ED5C810874258BDD1BFFF61BE5/', 'iconValue':'55'});
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929581116/642F7776C123FBE8A16F7EB0081BB433F3BF182A/', 'iconValue':'56'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929581462/4F24FE55C501231F645FFA5928FB29B9C053AC2A/', 'iconValue':'57'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929581966/A1F7C82D52A0E80E3B1CDA35626F6CBC7BB061B0/', 'iconValue':'58'});  
+			herbimain.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929582316/8699561332847B7D959212DEFB788873024F9357/', 'iconValue':'59'}); 
+			
+			
+			//BODY3
+            carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929725830/3D90349C06C96F296B7A11D58374E4FBEF7328C7/', 'iconValue':'2'});
+            carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929726145/4D904436166E5C9D41A39808D6939056DF3AB1BF/', 'iconValue':'3'});
+            carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929726543/CF84779B320AE461312ACED5662E2DEA2DD0ECE7/', 'iconValue':'4'});
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929731446/34F302F6D744ED271C369CCEE97AE51DD1CCF56E/', 'iconValue':'6'});
+            carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929731732/B21BF4D099A71CB040DBE8A99D4ABE8CCBB412E5/', 'iconValue':'7'});
+            carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929731978/F551B8A07A6DC4AFDDD945751EBECAA868AE867E/', 'iconValue':'8'});
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929732225/26661CC8EBE3547A312CBC9340D742986BF58462/', 'iconValue':'9'});
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929733001/EFE2982416B0ADF171D687C6F1546A53D6FF14A1/', 'iconValue':'12'});
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929734216/B94F266D6B3F251076562A48FEA35B1C82924376/', 'iconValue':'14'});
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929735561/C2136CF4BB3D40D7F300299E81C3379B190959B6/', 'iconValue':'17'});
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929736495/F2D785CE4DB72EDC4C6405CD6518D72C676F65DB/', 'iconValue':'19'});
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929656213/5DB683204400DD6075D95A05C78E5640506633AA/', 'iconValue':'20'});
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929656554/536A10612ADF47075EE8FCA0E5A60AB89DD86F9C/', 'iconValue':'21'});  
+            carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929656852/9BCA9F8C701DEDA28244AE740C3B59C8EE271621/', 'iconValue':'22'});  
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929657309/2099495936D5C9200317F741328160959129FEE2/', 'iconValue':'23'});
+		    carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929657760/D186BD8A0DEF1FFD9A151849A558A94ED9835AD5/', 'iconValue':'24'});  
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929658270/36E412E23D1CD4EDE3172849D9F9247712EF845F/', 'iconValue':'25'});  
+		    carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929659450/63D7E8E47DD9672B4A8FE1CC3434037B76ACF20E/', 'iconValue':'28'});  
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929659763/F778EABEBD010C74F2AA6D5203CDCAC68AC0A49F/', 'iconValue':'29'});
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660096/4EFDB72261C47461D5BF6CAC365038C243712F77/', 'iconValue':'30'});		
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660934/B36AFB8603680986E883D5CB24D8FFC3D19DC600/', 'iconValue':'32'});  
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929661518/3C5E88128B4D3DAC7BE35DAB166EDD3FD0DB5C1A/', 'iconValue':'33'});  
+			carnobody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929661966/6F2D9E335C5197DD4246B36D9D0C276EEADC7620/', 'iconValue':'34'}); 
+				
+				
+				
+				
+			herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929726543/CF84779B320AE461312ACED5662E2DEA2DD0ECE7/', 'iconValue':'4'});	
+			herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929732225/26661CC8EBE3547A312CBC9340D742986BF58462/', 'iconValue':'9'});
+				herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929734216/B94F266D6B3F251076562A48FEA35B1C82924376/', 'iconValue':'14'});
+				herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929736495/F2D785CE4DB72EDC4C6405CD6518D72C676F65DB/', 'iconValue':'19'});
+				 herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929656852/9BCA9F8C701DEDA28244AE740C3B59C8EE271621/', 'iconValue':'22'});
+				herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929657309/2099495936D5C9200317F741328160959129FEE2/', 'iconValue':'23'});
+		    herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929657760/D186BD8A0DEF1FFD9A151849A558A94ED9835AD5/', 'iconValue':'24'}); 
+				herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929659450/63D7E8E47DD9672B4A8FE1CC3434037B76ACF20E/', 'iconValue':'28'});  
+			herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929659763/F778EABEBD010C74F2AA6D5203CDCAC68AC0A49F/', 'iconValue':'29'});
+				herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660096/4EFDB72261C47461D5BF6CAC365038C243712F77/', 'iconValue':'30'});		
+			herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660934/B36AFB8603680986E883D5CB24D8FFC3D19DC600/', 'iconValue':'32'});  
+			herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929661518/3C5E88128B4D3DAC7BE35DAB166EDD3FD0DB5C1A/', 'iconValue':'33'});  
+			herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929661966/6F2D9E335C5197DD4246B36D9D0C276EEADC7620/', 'iconValue':'34'}); 
+			herbibody3.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929664366/CDF1594A82C6C4A37E7AF012B76EA9B01845D7F5/', 'iconValue':'39'});  	
+				
+				
+				
+         
+			
+			//DETAILS
+			
+			
+				herbidetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929580855/47EC7BDB5111E0ED5C810874258BDD1BFFF61BE5/', 'iconValue':'55'});
+			herbidetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929579275/698863BEA061D11096615E2357B17C3D4E36C627/', 'iconValue':'50'}); 
+			 herbidetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929734750/66F068FE423E616ABF1C243D6CA6E9EA15FE0C04/', 'iconValue':'15'});
+			 herbidetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929720598/12D9F1F580703226189D981C209832ACFBEA04BC/', 'iconValue':'0'});
+			herbidetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660560/BF247305A542BE3FF180E9A668D22D51F51A7723/', 'iconValue':'31'});  
+			herbidetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929656213/5DB683204400DD6075D95A05C78E5640506633AA/', 'iconValue':'20'});
+			herbidetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660096/4EFDB72261C47461D5BF6CAC365038C243712F77/', 'iconValue':'30'});
+			herbidetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929573438/2899B292B2507F10872896BFD01540B59BFC86F2/', 'iconValue':'40'}); 
+			herbidetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929485737/2AF667EEA2626CD9F0D002715E732BBFA7BF5552/', 'iconValue':'62'});  
+			herbidetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929486027/06D1CB14CAF6025D8BD07A0BFC63FD070DDC9D09/', 'iconValue':'63'});
+			herbidetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929486355/C5FA82024A996C25CB4D133426EF219A87D6C0C3/', 'iconValue':'64'});
+			herbidetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929486832/542E3F6C307625EDDDAADDDC7EF416DE4314226B/', 'iconValue':'65'});
+			
+			
+			
+			carnodetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929485737/2AF667EEA2626CD9F0D002715E732BBFA7BF5552/', 'iconValue':'62'});  
+			carnodetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929486027/06D1CB14CAF6025D8BD07A0BFC63FD070DDC9D09/', 'iconValue':'63'});
+			carnodetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929486355/C5FA82024A996C25CB4D133426EF219A87D6C0C3/', 'iconValue':'64'});
+			carnodetails.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929486832/542E3F6C307625EDDDAADDDC7EF416DE4314226B/', 'iconValue':'65'});
+	
+			/*OTHER 
+
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929731240/F2E442ED9BA31FD4414929AF717BAF70C492D2E7/', 'iconValue':'5'});
+            icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929732484/5A02E26DA043D9E817974C287E7264CDC8370DD6/', 'iconValue':'10'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929660934/B36AFB8603680986E883D5CB24D8FFC3D19DC600/', 'iconValue':'32'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929661518/3C5E88128B4D3DAC7BE35DAB166EDD3FD0DB5C1A/', 'iconValue':'33'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929661966/6F2D9E335C5197DD4246B36D9D0C276EEADC7620/', 'iconValue':'34'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929662361/8FBEE30A36075A56622B6BFA908EA35604DB82BE/', 'iconValue':'35'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929663051/24FAE220B1A22CA7BB9A9EBE3FAAFB1F67C3DA5D/', 'iconValue':'36'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929663475/35687EE86C528DB4074A2EB68F442C111B547DCC/', 'iconValue':'37'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929663946/6A5785BF0B182394B5040D2335475AB93C71447D/', 'iconValue':'38'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929573694/04B78E5B090FC076A7080154DE326EF98212A916/', 'iconValue':'41'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929573895/E9460CC7B151112656787C8749E35654E176AF56/', 'iconValue':'42'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929574101/068FF18BB6C561B8DD0336DB0775944530C63499/', 'iconValue':'43'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929574397/156AC2A011415C43B60663EF1639620A7FE4D4AC/', 'iconValue':'44'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929579513/A99354D96D2C24DCEB0E057CB72F2C484C78E2A9/', 'iconValue':'51'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929581116/642F7776C123FBE8A16F7EB0081BB433F3BF182A/', 'iconValue':'56'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929581462/4F24FE55C501231F645FFA5928FB29B9C053AC2A/', 'iconValue':'57'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929581966/A1F7C82D52A0E80E3B1CDA35626F6CBC7BB061B0/', 'iconValue':'58'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929582316/8699561332847B7D959212DEFB788873024F9357/', 'iconValue':'59'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929485380/952DDF8FD0965730060C4A0D4EBD231FA8A7DBAD/', 'iconValue':'60'});  
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929487146/5458767CF8A138F4D5D9EF4426404EA00FC5189D/', 'iconValue':'66'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929487451/5FC93512E4956CA01A173670D562953F6A667325/', 'iconValue':'67'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929487733/B7E3711DB666707253971A969D11BDDF42AD1503/', 'iconValue':'68'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929488130/6F271B07A35FD6FEDB2477A413E60974DF193963/', 'iconValue':'69'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929488435/80577612B1AC9BC0709CB5BAB962B829142FBD5C/', 'iconValue':'70'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929488721/D44A7ABEAA3881FC55B5648A7D9C18D2AABC3BF4/', 'iconValue':'71'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929489573/7F385614D93929FE84E5AA20D708FD3CE0738DEB/', 'iconValue':'72'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929490034/D515F1879B526F3DAF6FBF7014D63EE5D97CFFBC/', 'iconValue':'73'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929490496/E170D65495D1F43BC7367E34A3184572E9B68514/', 'iconValue':'74'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929490947/02AB4830E0E0E24B5FCDAFB5E2D6D0FA3CB88EF2/', 'iconValue':'75'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929440518/0066FE44A46D4729AC78AE453CB4A0B772F54007/', 'iconValue':'76'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929441046/8CDAA19BEC0BF57B35733AFAA8C5E5DAAEF44707/', 'iconValue':'77'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929441346/2F7D3E5600122A581E68F31BF0849394E1F77E58/', 'iconValue':'78'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929441715/8B64E4E8A47D7BF3DA5B0FE9225657D06F4E1E9A/', 'iconValue':'79'});
+			icons.push({'iconFilePath':'https://steamuserimages-a.akamaihd.net/ugc/787480374929390775/944024C32A7DEDECDB8DD13AC48CD5E2DFF24C66/', 'iconValue':'80'});
+			*/
+			
+			iconSelect.refresh(carnomain);
+       
+		    iconSelect3.refresh(carnobody3);
+			iconSelect4.refresh(carnomain);
+			iconSelect5.refresh(carnomain);
+			    iconSelect2.refresh(carnodetails);
+			
+		   document.getElementById("dino-pick").addEventListener('change', function(){
+		   iconSelect = new IconSelect("my-icon-select", 
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
+                'selectedBoxPadding':5,
+                'iconsWidth':23,
+                'iconsHeight':23,
+                'boxIconSpace':1,
+                'vectoralIconNumber':4,
+                'horizontalIconNumber':4});
+				
+		    iconSelect2 = new IconSelect("my-icon-select2", 
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
+                'selectedBoxPadding':5,
+                'iconsWidth':23,
+                'iconsHeight':23,
+                'boxIconSpace':1,
+                'vectoralIconNumber':4,
+                'horizontalIconNumber':2});
+				
+  iconSelect3 = new IconSelect("my-icon-select3", 
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
+                'selectedBoxPadding':5,
+                'iconsWidth':23,
+                'iconsHeight':23,
+                'boxIconSpace':1,
+                'vectoralIconNumber':4,
+                'horizontalIconNumber':4});
+
+				iconSelect4 = new IconSelect("my-icon-select4", 
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
+                'selectedBoxPadding':5,
+                'iconsWidth':23,
+                'iconsHeight':23,
+                'boxIconSpace':1,
+                'vectoralIconNumber':4,
+                'horizontalIconNumber':4});
+				
+				iconSelect5 = new IconSelect("my-icon-select5", 
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
+                'selectedBoxPadding':5,
+                'iconsWidth':23,
+                'iconsHeight':23,
+                'boxIconSpace':1,
+                'vectoralIconNumber':4,
+                'horizontalIconNumber':4});
+				
+		   if(document.getElementById("dino-pick").value === "carno") { 
+		    iconSelect.refresh(carnomain);
+		   iconSelect2.refresh(carnodetails);
+		   iconSelect3.refresh(carnobody3);
+		   iconSelect4.refresh(carnomain);
+			iconSelect5.refresh(carnomain);
+		   }
+		   if(document.getElementById("dino-pick").value === "herbi") {
+		    iconSelect.refresh(herbimain);
+		   iconSelect2.refresh(herbidetails);
+		   iconSelect3.refresh(herbibody3);
+		    iconSelect4.refresh(herbimain);
+			 iconSelect5.refresh(herbimain);
+		   }
+            });
+		   
+        };
+		
+           
+        </script>
+        
+    </head>
+   <body>
+        
+	<div class="tingle-content-wrapper wrap-site">
+		<div class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience and security.</div>
+		<div class="lazyload wrap-site__bg" data-bg="url(img/media/bg-1.jpg)"></div>
+		<header id="header" class="header">
+		</header>
+		<main class="main">
+		<section class="section palette">
+				<div class="wrap">
+					<h1 class="h1 mb-5">Skin Palette</h1>
+   
+		<div align="center" style="
+    background: #1d1d1d66;
+    width: 17em;
+    padding: 10px;
+    border-radius: 15px;
+">
+       <select name="dinopick" id="dino-pick">
+    <option value="carno">🍖Carnivore</option>
+  <option value="herbi">🥦Herbivore</option></select>
+  <input type="text" id="selected-text" readonly="readonly" name="selected-text"><button onclick="copytxt()" id="clipbtn">📋</button>
+  
+  <p></p>
+		</div>
+      <div align="left" id="whole-selectors" style="width: 15em;">
+	   
+	    <div id="bgskn">
+	   
+	   
+	   
+   
+
+<label style="
+    width: 60%;
+    margin-right: -3%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    font-weight: 600;
+">Body 1</label>
+<div class="icon-select" id="my-icon-select"></div>
+
+    <label style="
+    width: 60%;
+    margin-right: -3%;
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-weight: 600;
+    /* background: #b699992e; */
+">Body 2</label>
+	<div class="icon-select" id="my-icon-select4"></div>
+	
+	<label style="
+    width: 60%;
+    margin-right: -3%;
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-weight: 600;
+    /* background: #b699992e; */
+">Body 3</label>
+	<div class="icon-select" id="my-icon-select5"></div>
+	
+	<label style="
+    width: 60%;
+    margin-right: -3%;
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-weight: 600;
+    /* background: #b699992e; */
+">Underbelly</label>
+	<div class="icon-select" id="my-icon-select3"></div>
+	
+	<label style="
+    width: 60%;
+    margin-right: -3%;
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-weight: 600;
+    /* background: #b699992e; */
+">Details/Crest</label>
+	<div class="icon-select" id="my-icon-select2"></div>
+	</div>
+	</div>
+		</main>
+    <footer class="footer">
+			<div class="wrap">
+				<div class="row align-items-center text-center">
+					<div class="col-sm text-sm-left">
+						<div class="footer__copyright">© 2021 MIT License</div>
+					</div>
+					<div class="col-sm-auto my-2 my-sm-0"><a class="d-inline-flex align-items-center donate-btn" href="//paypal.me/antroll" target="_blank" data-tippy-content="via Paypal" data-tippy-placement="right">Support author <svg class="svg-icon ml-2 donate-btn__icon"><use xlink:href="img/theme/sprite.symbol.svg#si-heart"/></svg></a>
+					</div>
+					<div class="col-sm text-sm-right">
+						<div class="d-inline-flex align-items-center footer__created">Made by - Eldevia & <a class="flex-shrink-0 ml-1" href="https://github.com/Antroll" target="_blank">Antroll</a>
+							<a class="ml-3 flex-shrink-0 footer__github" href="https://github.com/Antroll/the-isle-info" target="_blank" data-tippy-content="Repository on Github">
+								<svg class="svg-icon">
+									<use xlink:href="img/theme/sprite.symbol.svg#si-github" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CObject.assign%2CArray.from%2CURLSearchParams"></script>
+	<script src="scripts/vendors.js?3213122"></script>
+	<script src="scripts/main.js?3213122"></script>
+        <!-- Production -->
+	<script>
+ function copytxt() {
+  /* Get the text field */
+  var copyText = document.getElementById("selected-text");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  tippy("#clipbtn", {
+  // default
+    arrow: true,
+  content: '<strong>Copied!</strong>',
+  trigger: 'click',
+ theme: 'light',
+  onShow(instance) {
+    setTimeout(() => {
+      instance.hide();
+    }, 1900);
+  }
+});
+}
+</script>
+ <!-- This is for the Tooltips   -->
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js/dist/tippy.standalone.min.js"></script>
+
+
+
+</body>
+
+</html>
