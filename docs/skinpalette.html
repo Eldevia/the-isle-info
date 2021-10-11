@@ -27,11 +27,15 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="styles/vendors.css">
-	<link rel="stylesheet" href="styles/style.css?3213122">
+
 <script
     src="https://code.jquery.com/jquery-3.3.1.js">
 </script>
 	<script> 
+	 var theme_style = localStorage && localStorage.getItem('theme_style');
+if(theme_style){
+   document.write(theme_style);
+}
 $(function(){
   $("#header").load("partial/header.html"); 
 });
