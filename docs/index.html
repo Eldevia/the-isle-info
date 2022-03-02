@@ -70,26 +70,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  <li class="hubLi">
                         <a href="map-thenyaw.html" style="width: 25%;">
                             <img class="lazyload map__img loaded hubImage" data-src="img/media/map-thenyaw.png" alt="map-thenyaw" src="img/media/map-thenyaw.png" data-was-processed="true">
-                            <p class="hubLink"> MAP THENYAW </p>
+                            <p class="hubLink thentxt"> MAP THENYAW </p>
                         </a>
                     </li>
                     <li class="hubLi">
                         <a href="map-v-three.html">
                             <img class="lazyload map__img loaded hubImage" data-src="img/media/map-v3.jpg" alt="map-v3" src="img/media/map-v3.jpg" data-was-processed="true">
-                            <p  class="hubLink"> MAP V3 </p>
+                            <p  class="hubLink v3txt"> MAP V3 </p>
                         </a>
                     </li>
                   
                     <li class="hubLi">
                         <a href="map-isla-spiro.html">
                             <img class="lazyload map__img loaded hubImage" data-src="img/media/map-spiro-big2.png" alt="map-spiro" src="img/media/map-spiro-big2.png" data-was-processed="true">
-                            <p class="hubLink"> MAP EVRIMA </p>
+                            <p class="hubLink evrtxt"> MAP EVRIMA </p>
                         </a>
                     </li>
                   
                 </ul>
             </section>
             <style>
+			
+			
+			
 			.hub__title{
 			padding-top: 70px;
     padding-bottom: 30px;
@@ -151,6 +154,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 a:hover {
                     text-decoration: none
                 }
+				@media only screen and (max-width: 600px) {
+				.hubLink{
+				visibility:hidden;
+				
+				}
+				.evrtxt:after{
+				padding: 11px;
+    border-radius: 50px;
+    visibility: visible;
+	 background-color: black;
+    content: "EVRIMA";
+   
+				}
+				.v3txt:after{
+					padding: 2.6VW 3.8vw;
+    border-radius: 50px;
+    visibility: visible;
+	 background-color: black;
+				content:"V3";
+				}
+				.thentxt:after{
+					padding: 11px;
+    border-radius: 50px;
+    visibility: visible;
+	 background-color: black;
+				content:"THENYAW";
+				}
+			.hubImage {
+				
+  border-radius: 50% !important;
+  height: 28vw;
+  width: 28vw;
+  }
+			}
             </style>
         </main>
         <footer class="footer">
