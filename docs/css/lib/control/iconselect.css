@@ -15,6 +15,7 @@ input#selected-text {
     background: #b0b2b8;
     border-radius: 12px;
     text-align: center;
+  width: 70%;
     border: solid;
     border-color: #60646b;
 }
