@@ -151,6 +151,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</footer>
 	</div>
+  <script>
+    $('.js-game-mod-switcher').change(function () {
+        if (!this.checked) 
+        //  ^
+           $('.heatmap__img').hide();
+        else 
+            $('.heatmap__img').show();
+    });
+    </script>
 	<script> document.querySelector(".map").classList.add("map--invisible-markers")</script> 
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CObject.assign%2CArray.from%2CURLSearchParams"></script>
 	<script src="scripts/vendors.js?3213122"></script>
