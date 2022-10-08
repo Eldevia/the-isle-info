@@ -39,6 +39,14 @@ $(function(){
    $("#header").load("partial/header.html"); 
 });
 </script> 
+  
+  <style>
+    #new{
+    font-size: 0.5rem;
+float: inline-end;
+color: red;
+    }
+    </style>
 </head>
 
 <body>
@@ -66,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										</svg>Paste</button>
 								</div>
                 <label class="ui-switch mt-3 mr-auto">
-								<input class="visuallyhidden js-game-mod-switcher ui-switch__input" type="checkbox" name="herbi"><i class="ui-switch__icon"></i><span class="ui-switch__text">🌿 Foodmap</span>
+								<input class="visuallyhidden js-game-mod-switcher ui-switch__input" type="checkbox" name="herbi"><i class="ui-switch__icon"></i><span class="ui-switch__text">🌿 Foodmap<span id="new">NEW</span></span>
 							</label>
 								<div class="col-md-auto mt-3 d-flex align-items-center">
 									<label class="mr-2 mb-0 user-coords__label" for="lat">Lat:</label>
